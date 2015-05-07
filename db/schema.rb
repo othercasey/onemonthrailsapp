@@ -17,10 +17,10 @@ ActiveRecord::Schema.define(version: 20150405231716) do
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_is"
+    t.integer  "user_id"
   end
 
-  add_index "pins", ["user_is"], name: "index_pins_on_user_is"
+  add_index "pins", ["user_id"], name: "index_pins_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
