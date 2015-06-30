@@ -1,6 +1,12 @@
-<h1>Editing pin</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @pin %> |
-<%= link_to 'Back', pins_path %>
+<div class="panel panel-defalut">
+	<div class="panel-heading">
+		<div class="panel-title">
+			<h1>Editing pin <span class="glyphicon glyphicon-pencil"></span></h1>
+		</div>
+	</div>
+	<div class="panel-body">
+		<%= render 'form' %>
+		<%= link_to 'Show', @pin %> |
+		<%= link_to 'Back', pins_path %>
+	</div>
+</div>
